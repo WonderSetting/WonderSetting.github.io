@@ -1,0 +1,58 @@
+body {
+  background-color: #1a1a1a;
+  color: #FFF;
+
+  margin: 0;
+
+  min-height: 100vh;
+  flex-direction: column; /* Vertical Alignment*/
+  justify-content: space-between; /* Push header and footer away from title*/
+
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 5vh;
+}
+
+body, .Start-Screen-Title { /* Centering Elements */
+  display: flex;
+  align-items: center;
+}
+
+.Start-Screen-Title { /* Centering Text */
+  text-align: center;
+  justify-content: center;
+}
+
+header, footer, .Start-Screen-Title {
+  width: 100%;
+}
+
+header, footer {
+  height: 10vh;
+  background-color: #1a1a1a;
+}
+
+.Rainbow-Text-Animated {
+  background: linear-gradient(to right, #6666ff, #0099ff , #00ff00, #ff3399, #6666ff);
+  background-clip: text;
+  color: transparent;
+  animation: Color-Rotate 10s linear 0s infinite;
+  background-size: 400%;
+}
+
+@keyframes Color-Rotate {
+  from {
+    color: #6666ff;
+  }
+  10% {
+    color: #0099ff;
+  }
+  50% {
+    color: #00ff00;
+  }
+  75% {
+    color: #ff3399;
+  }
+  100% {
+    color: #6666ff;
+  }
+}
